@@ -1,7 +1,23 @@
 aid: pop-mart
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pop-mart.png
 name: Pop Mart
-description: 'Pop Mart is a company surfaced as a portfolio company of hongshan and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Pop Mart International Group is a Chinese pop-culture and designer-toy company best known
+  for its blind-box collectibles and character IP such as Labubu (The Monsters), Molly, Skullpanda and
+  Dimoo. Headquartered in Beijing and listed on the Hong Kong Stock Exchange, it operates retail stores,
+  robot-shop vending machines, and a consumer e-commerce presence across China and international markets.
+  Surfaced as a portfolio company of Hongshan (HongShan/Sequoia China). Consumer sector; no public developer
+  API surface was found during enrichment (no developer portal, /.well-known documents, or llms.txt).'
 url: https://raw.githubusercontent.com/api-evangelist/pop-mart/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Retail
+- E-commerce
+- Collectibles
+- Toys
+- Consumer Products
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +43,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/pop-mart-domain-security.yml
 - type: Website
   url: https://popmart.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
